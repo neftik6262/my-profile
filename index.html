@@ -3,10 +3,28 @@ cat > index.html << 'EOF'
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Мой профиль</title>
+    <title>Мой профессиональный профиль</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; }
-        .profile { max-width: 600px; margin: 0 auto; }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .social-btn {
+            background-color: #0088cc;
+            margin: 5px;
+            padding: 8px 16px;
+        }
+        .social-btn:hover {
+            background-color: #006699;
+        }
     </style>
 </head>
 <body>
@@ -16,6 +34,12 @@ cat > index.html << 'EOF'
         <p>Привет! Я веб-разработчик с 3-летним опытом. Специализируюсь на React и Node.js.</p>
         <p>Люблю создавать удобные и красивые веб-приложения.</p>
         <p>Email: neftik6262@gmail.com</p>
+    </div>
+    <div class="social-login">
+        <h3>Вход через социальные сети</h3>
+        <button class="social-btn">ВКонтакте</button>
+        <button class="social-btn">Telegram</button>
+        <button class="social-btn">GitHub</button>
     </div>
 	<button>Подписаться на новости</button>
 </body>
